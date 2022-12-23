@@ -55,7 +55,7 @@ dockers:
     image_templates:
     - "ghcr.io/alf1e/listmonk:latest"
     - "ghcr.io/alf1e/listmonk:{{ .Tag }}"
-    dockerfile: Dockerfile
+    dockerfile: Dockerfile.arm64
     extra_files:
     - config.toml.sample
     - config-demo.toml
