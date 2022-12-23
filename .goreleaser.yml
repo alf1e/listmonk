@@ -35,9 +35,20 @@ archives:
 dockers:
   -
     goos: linux
-    goarch: 
-    - amd64
-    - arm64
+    goarch: amd64
+    ids:
+    - listmonk
+    image_templates:
+    - "ghcr.io/alf1e/listmonk:latest"
+    - "ghcr.io/alf1e/listmonk:{{ .Tag }}"
+    dockerfile: Dockerfile
+    extra_files:
+    - config.toml.sample
+    - config-demo.toml
+  -
+    goos: linux
+    goarch: arm64
+    use: buildx
     ids:
     - listmonk
     image_templates:
