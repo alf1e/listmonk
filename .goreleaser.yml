@@ -36,8 +36,8 @@ dockers:
   -
     goos: linux
     goarch: 
-      - amd64
-      - arm64
+    - amd64
+    - arm64
     ids:
     - listmonk
     image_templates:
