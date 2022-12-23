@@ -49,7 +49,7 @@ dockers:
     goos: linux
     goarch: arm64
     use: buildx
-    build_flag_templates: [--platform=linux/arm64]
+    build_flag_templates: [--platform=linux/arm64/v8]
     ids:
     - listmonk
     image_templates:
