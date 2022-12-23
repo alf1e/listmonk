@@ -39,8 +39,8 @@ dockers:
     ids:
     - listmonk
     image_templates:
-    - "listmonk/listmonk:latest"
-    - "listmonk/listmonk:{{ .Tag }}"
+    - "ghcr.io/alf1e/listmonk:latest"
+    - "ghcr.io/alf1e/listmonk:{{ .Tag }}"
     dockerfile: Dockerfile
     extra_files:
     - config.toml.sample
@@ -51,8 +51,8 @@ dockers:
     ids:
     - listmonk
     image_templates:
-    - "listmonk/listmonk:latest"
-    - "listmonk/listmonk:{{ .Tag }}"
+    - "ghcr.io/alf1e/listmonk:latest"
+    - "ghcr.io/alf1e/listmonk:{{ .Tag }}"
     dockerfile: Dockerfile
     extra_files:
     - config.toml.sample
